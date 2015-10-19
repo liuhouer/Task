@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="minPlayer : A minimalistic, plugin-based &quot;core&quot; media player for the web." />
+
+    <!-- Include jQuery and jQuery UI -->
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+    <!-- Many more themes to chose from... go to http://jqueryui.com/themeroller! -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/dark-hive/jquery-ui.css">
+
+    <!-- The following can be replaced by a single javascript include bin/minplayer.compressed.js -->
+    <script type="text/javascript" src="minplayer/src/minplayer.compatibility.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.flags.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.async.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.plugin.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.display.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.image.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.file.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.playLoader.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.players.base.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.players.html5.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.players.flash.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.players.minplayer.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.players.youtube.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.players.vimeo.js"></script>
+    <script type="text/javascript" src="minplayer/src/minplayer.controller.js"></script>
+
+    <!-- Include the template CSS and JS files. -->
+    <link rel="stylesheet" href="templates/default/css/minplayer_default.css">
+    <script type="text/javascript" src="templates/default/js/minplayer.playLoader.default.js"></script>
+    <script type="text/javascript" src="templates/default/js/minplayer.controller.default.js"></script>
+    <script type="text/javascript" src="templates/default/js/minplayer.default.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#h264").minplayer({
+          width: '500px',
+          height: '300px'
+        });
+       
+      });
+    </script>
+   
+
+    <title>minPlayer</title>
+  </head>
+
+  <body>
+
+
+      
+     
+
+
+<video id="h264" src="http://127.0.0.1/1.mp4"></video>
+
+   
+
+  </body>
+</html>
